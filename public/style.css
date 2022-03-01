@@ -1,20 +1,17 @@
-/*                                      ELEMENTS                           */
+/*--------------------------------------ELEMENTS-----------------------------------------*/
 
 body {
-    background-color: black !important;
+    background-color: black;
     height: 100%;
     padding: 5px;
     min-width: 300px;
-}
-
-p {
     color: white;
     font-size: 1rem;
     font-family: "Courier";
-    margin: 5px;
 }
 
-/*                                          LINKS                       */
+
+/*---------------------------------------LINKS-------------------------------------------*/
 
 a {
     color: white;
@@ -32,12 +29,12 @@ span > a {
     color: lightblue;
 }
 
-/*                                          CLASSES                                        */
+/*----------------------------------------CLASSES-----------------------------------------*/
 
 .nav-container {
     margin: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 
 .nav-links {
@@ -79,6 +76,7 @@ span > a {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    min-width: fit-content;
 }
 
 .text-container {
@@ -118,22 +116,20 @@ span > a {
     align-items: center;
     margin: 10px;
     overflow: visible;
+    position: relative;
 }
 
 .tarot-container > div {
     display: flex;
     justify-content: center;
+
 }
 
-.tarot-container p {
+.tarot-text {
     position: absolute;
+    top: 20px;
     font-size: 1.2rem;
-    margin-top: 20px;
     z-index: 2;
-}
-
-.home-container p {
-    font-size: 2rem;
 }
 
 .footer {
@@ -142,13 +138,16 @@ span > a {
     align-items: center;
 }
 
-/*                                         MEDIA QUERIES                                 */
+/*-------------------------------------MEDIA QUERIES--------------------------------------*/
 
 @media (max-width: 810px){
     img {
         max-width: 100%;
         max-height: 100%;
-    }    
+    }  
+    .nav-container {
+        justify-content: center;
+    }  
     .projects-container {
         flex-direction: column;
     }
@@ -167,12 +166,15 @@ span > a {
     .tarot-card {
         width: 80%;
     }
-    .tarot-container p {
+    .tarot-text {
         font-size: 1em;
     }
     .nav-links {
         justify-content: center;
         margin: 0;
         left: 0;
+    }
+    .title {
+        font-size: 2em;
     }
 }
