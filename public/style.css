@@ -138,6 +138,11 @@ span > a {
     align-items: center;
 }
 
+.hidden {
+    opacity: 0;
+    
+}
+
 /*-------------------------------------MEDIA QUERIES--------------------------------------*/
 
 @media (max-width: 810px){
