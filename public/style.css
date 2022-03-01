@@ -1,15 +1,178 @@
+/*                                      ELEMENTS                           */
+
 body {
-    background-color: black;
+    background-color: black !important;
+    height: 100%;
+    padding: 5px;
+    min-width: 300px;
 }
 
 p {
-    color: #73b8ff;
-    font-size: 4em
+    color: white;
+    font-size: 1rem;
+    font-family: "Courier";
+    margin: 5px;
 }
 
-.container {
+/*                                          LINKS                       */
+
+a {
+    color: white;
+    font-family: "Courier";
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+span > a {
+    color: #73b8ff;
+    font-size: 1rem;
+}
+
+.links > a:visited, span > a:visited {
+    color: lightblue;
+}
+
+/*                                          CLASSES                                        */
+
+.nav-container {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links > a {
+    display: flex;
+    justify-content: center;
+    padding: 0px 5px 0px 5px;
+    margin: 10px;
+    width: auto;
+}
+
+.current-page {
+    border: white dashed;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+.links > a {
+    color: #73b8ff;
+}
+
+.title {
+    font-family: "Courier";
+    font-size: 3rem;
+}
+
+.tarot-card {
+    width: 300px;
+}
+
+.link-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.text-container {
+    max-width: 300px;
+}
+
+.container, .about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px;
+    overflow: auto;
+    min-width: 100px;
+}
+
+.about-container {
+    flex-direction: row;
+    left: 0;
+    margin-top: 60px;
+    border: lightblue dashed;
+    overflow: auto;
+}
+
+.about-container > div {
+    margin: 10px;
+}
+
+.projects-container {
+    display: flex;
+}
+
+.tarot-container, .home-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 10px;
+    overflow: visible;
+}
+
+.tarot-container > div {
+    display: flex;
+    justify-content: center;
+}
+
+.tarot-container p {
+    position: absolute;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    z-index: 2;
+}
+
+.home-container p {
+    font-size: 2rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*                                         MEDIA QUERIES                                 */
+
+@media (max-width: 810px){
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }    
+    .projects-container {
+        flex-direction: column;
+    }
+    .link-container {
+        flex-direction: column;
+    }
+    .about-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px){
+    a {
+        font-size: 1em;
+    }
+    .tarot-card {
+        width: 80%;
+    }
+    .tarot-container p {
+        font-size: 1em;
+    }
+    .nav-links {
+        justify-content: center;
+        margin: 0;
+        left: 0;
+    }
 }
