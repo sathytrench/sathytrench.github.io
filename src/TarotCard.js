@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 const TarotCard = ({ projectData }) => {
   const { title, cardFront, cardBack, description, links } = projectData;
@@ -9,27 +9,47 @@ const TarotCard = ({ projectData }) => {
   const cardBackRef = useRef();
 
   const handleClick = () => {
-    if (cardFrontRef.current) {
-      setIsCardFlipped(!isCardFlipped);
-      cardFrontRef.current.classList.add("hidden");
+    if (!isCardFlipped) {
+      if (cardFrontRef.current && cardBackRef.current) {
+        setIsCardFlipped(true);
+        cardFrontRef.current.classList.remove("shown");
+        cardFrontRef.current.classList.add("hidden");
+        setTimeout(() => {
+          cardBackRef.current.classList.remove("hidden");
+          cardBackRef.current.classList.add("shown");
+        }, 1000)
+      }
+    } else {
+      if (cardBackRef.current && cardFrontRef.current) {
+        setIsCardFlipped(false);
+        cardBackRef.current.classList.remove("shown");
+        cardBackRef.current.classList.add("hidden");
+        setTimeout(() => {
+          cardFrontRef.current.classList.remove("hidden");
+          cardFrontRef.current.classList.add("shown");
+        }, 1000)
+      }
     }
   }
-  
+
   return (
     <div className="tarot-container" onClick={handleClick}>
-      <div className="tarot-title">{title}</div>
-      <div ref={cardFrontRef}>
-        <img src={cardFront.imgSrc} 
-        alt={cardFront.imgAlt} 
-        className="tarot-front"/>
+      <div className="tarot-front" ref={cardFrontRef}>
+        <div className="tarot-title">{title}</div>
+        <div>
+          <img src={cardFront.imgSrc} 
+          alt={cardFront.imgAlt} 
+          className="tarot-front-image"/>
+        </div>
       </div>
       <div className="tarot-back" ref={cardBackRef}>
-          <img src={cardBack.imgSrc} 
-          alt={cardBack.imgAlt}/>
+        <img src={cardBack.imgSrc} 
+        alt={cardBack.imgAlt}/>
+        <div className="tarot-title">{title}</div>
         <div className="tarot-back-inner">
           <div>{description}</div>
             {links?.map((link, idx) => (
-              <div key={idx} class="link-container">
+              <div key={idx} className="link-container">
                 <a href={link.url} target="_blank" rel="noopener noreferrer">{link.text}🠢</a>
               </div>
             ))}

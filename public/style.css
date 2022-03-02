@@ -20,6 +20,10 @@ a {
     font-size: 2rem;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 span > a {
     color: #73b8ff;
     font-size: 1rem;
@@ -113,13 +117,11 @@ span > a {
     margin: 10px;
     overflow: visible;
     position: relative;
-    /* border: pink dotted; */
 }
 
 .tarot-container {
     cursor: pointer;
     position: relative;
-    border: blue dotted;
     display: flex;
 }
 
@@ -128,18 +130,8 @@ span > a {
     justify-content: center;
 }
 
-
-.tarot-front {
+.tarot-front-image {
     width: 300px;
-    opacity: 0;
-}
-
-.tarot-title {
-    position: absolute;
-    top: 20px;
-    font-size: 1.2rem;
-    z-index: 2;
-    /* border: yellow dotted; */
 }
 
 .tarot-back {
@@ -148,18 +140,22 @@ span > a {
     font-size: 1.2rem;
     top: 0;
     left: 0;
-    border: white dotted;
+    opacity: 0;
+    z-index: -1000;
+}
+
+.tarot-title {
+    position: absolute;
+    top: 20px;
+    font-size: 1.2rem;
+    z-index: 2;
 }
 
 .tarot-back-inner {
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.tarot-back > div {
-    position: absolute;
-    display: flex;
     font-size: 1.2rem;
     padding: 60px 20px 10px 25px;
     top: 0;
@@ -181,6 +177,12 @@ span > a {
 
 .hidden {
     opacity: 0;
+    z-index: -1000;
+}
+
+.shown {
+    opacity: 100%;
+    z-index: 1000;
 }
 
 /*-------------------------------------MEDIA QUERIES--------------------------------------*/
