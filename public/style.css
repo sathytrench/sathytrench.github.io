@@ -68,10 +68,6 @@ span > a {
     font-size: 3rem;
 }
 
-.tarot-card {
-    width: 300px;
-}
-
 .link-container {
     display: flex;
     flex-direction: row;
@@ -117,19 +113,64 @@ span > a {
     margin: 10px;
     overflow: visible;
     position: relative;
+    /* border: pink dotted; */
+}
+
+.tarot-container {
+    cursor: pointer;
+    position: relative;
+    border: blue dotted;
+    display: flex;
 }
 
 .tarot-container > div {
     display: flex;
     justify-content: center;
-
 }
 
-.tarot-text {
+
+.tarot-front {
+    width: 300px;
+    opacity: 0;
+}
+
+.tarot-title {
     position: absolute;
     top: 20px;
     font-size: 1.2rem;
     z-index: 2;
+    /* border: yellow dotted; */
+}
+
+.tarot-back {
+    position: absolute;
+    display: flex;
+    font-size: 1.2rem;
+    top: 0;
+    left: 0;
+    border: white dotted;
+}
+
+.tarot-back-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tarot-back > div {
+    position: absolute;
+    display: flex;
+    font-size: 1.2rem;
+    padding: 60px 20px 10px 25px;
+    top: 0;
+    left: 0;
+    font-size: 1rem;
+    z-index: 2;
+}
+
+.tarot-back a {
+    font-size: 1rem;
+    color: lightblue
 }
 
 .footer {
@@ -140,7 +181,6 @@ span > a {
 
 .hidden {
     opacity: 0;
-    
 }
 
 /*-------------------------------------MEDIA QUERIES--------------------------------------*/
@@ -168,7 +208,7 @@ span > a {
     a {
         font-size: 1em;
     }
-    .tarot-card {
+    .tarot-front {
         width: 80%;
     }
     .tarot-text {

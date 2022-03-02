@@ -8,7 +8,7 @@ const Work = () => {
         <div className="container" key={catIdx}>
           <div className="title">{item.category}</div>
           <div className="projects-container">
-            {item.projects.map((proj, projIdx) => (
+            {item.projects?.map((proj, projIdx) => (
               <TarotCard projectData={proj} key={`${catIdx}-${projIdx}`}/>
             ))}
           </div> 
