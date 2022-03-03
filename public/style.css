@@ -1,15 +1,285 @@
+/*--------------------------------------ELEMENTS-----------------------------------------*/
+
 body {
     background-color: black;
+    height: 100%;
+    padding: 5px;
+    min-width: 300px;
+    color: white;
+    font-size: 1rem;
+    font-family: "Courier";
 }
 
-p {
+
+/*---------------------------------------LINKS-------------------------------------------*/
+
+a {
+    color: white;
+    font-family: "Courier";
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+span > a {
     color: #73b8ff;
-    font-size: 4em
+    font-size: 1rem;
 }
 
-.container {
+.links > a:visited, span > a:visited {
+    color: lightblue;
+}
+
+/*----------------------------------------CLASSES-----------------------------------------*/
+
+.nav-container {
+    margin: 20px;
+    display: flex;
+    justify-content: left;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links > a {
+    display: flex;
+    justify-content: center;
+    padding: 0px 5px 0px 5px;
+    margin: 10px;
+    width: auto;
+}
+
+.current-page {
+    border: white dashed;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+.links > a {
+    color: #73b8ff;
+}
+
+.title {
+    font-family: "Courier";
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.link-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    min-width: fit-content;
+}
+
+.text-container {
+    max-width: 300px;
+}
+
+.container, .about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px;
+    overflow: auto;
+    min-width: 100px;
+}
+
+.about-container {
+    flex-direction: row;
+    left: 0;
+    margin-top: 60px;
+    border: lightblue dashed;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+.about-container > div {
+    margin: 10px;
+}
+
+.projects-container {
+    display: flex;
+}
+
+.tarot-container, .home-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 10px;
+    overflow: visible;
+    position: relative;
 }
+
+.tarot-container {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+}
+
+.tarot-container > div {
+    display: flex;
+    justify-content: center;
+}
+
+.tarot-front-image {
+    width: 300px;
+}
+
+.tarot-back {
+    position: absolute;
+    display: flex;
+    font-size: 1.2rem;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1000;
+}
+
+.tarot-title {
+    position: absolute;
+    top: 20px;
+    font-size: 1.2rem;
+    z-index: 2;
+}
+
+.tarot-back-inner {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 40px 30px 10px 30px;
+    top: 0;
+    left: 0;
+    font-size: 1rem;
+    z-index: 2;
+}
+
+.tarot-back-inner > div {
+    margin-top: 10px;
+}
+
+.tarot-back-inner a:hover {
+    text-decoration: underline;
+}
+
+.project-image {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.tarot-back a {
+    font-size: 1rem;
+    color: lightblue
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    animation: fadeout 1s;
+    opacity: 0;
+    z-index: -1000;
+}
+
+.shown {
+    animation: fadein 1s;
+    opacity: 100%;
+    z-index: 1000;
+}
+
+/*-------------------------------------MEDIA QUERIES--------------------------------------*/
+
+@media (max-width: 810px){
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }  
+    .nav-container {
+        justify-content: center;
+    }  
+    .projects-container {
+        flex-direction: column;
+    }
+    .home-container {
+        margin-bottom: 75px;
+        border-radius: 10px;
+        border: white dashed;
+    }
+    .link-container {
+        flex-direction: column;
+    }
+    .about-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px){
+    a {
+        font-size: 1em;
+    }
+    .project-image {
+        width: 150px;
+        height: 150px;
+    }
+    .nav-links {
+        justify-content: center;
+        margin: 0;
+        left: 0;
+    }
+    .title {
+        font-size: 2em;
+    }
+}
+
+/*-------------------------------------ANIMATIONS--------------------------------------*/
+
+@keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+@-webkit-keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
