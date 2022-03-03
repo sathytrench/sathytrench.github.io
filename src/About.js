@@ -8,13 +8,13 @@ const About = () => {
         <img src={fairy} alt="A blue fairy hovering with wand in hand" />
       </div>
       <div className="text-container">
-        hi! i'm anahit<br /><br />
-          + software engineer and artist<br />
+          + hi! i'm anahit<br /><br />
+          + software engineer and artist<br /><br />
           + based in nyc<br /><br />
           + i recently completed a fullstack apprenticeship at 
           <span><a href="https://upstatement.com/" target="_blank" rel="noopener noreferrer"> upstatement.com</a></span>, 
           a digital product studio with an emphasis on design<br /><br />
-          + i love building weird and beautiful things, sharing open-source code, 
+          + i love building unusual and beautiful things, sharing open-source code, 
           and making webgames
       </div>
       <div className="link-container">
