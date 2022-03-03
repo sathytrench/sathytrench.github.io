@@ -1,14 +1,10 @@
-import {Link, useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const NavBar = () => {
   const location = useLocation();
   const path = location.pathname;
 
-  if (path === '/') {
-    return (
-      <></>
-    );
-  } else if (path === '/about'){
+  if (path === '/about'){
     return (
       <div className="nav-container">
         <div className="nav-links">
@@ -18,7 +14,7 @@ const NavBar = () => {
         </div>
       </div>
     );
-  } else {
+  } else if (path === '/work') {
     return (
       <div className="nav-container">
         <div className="nav-links">
@@ -27,6 +23,10 @@ const NavBar = () => {
           <Link to="/work" className="current-page">work</Link>
         </div>
       </div>
+    );
+  } else {
+    return (
+      <></>
     );
   }
 };

@@ -66,10 +66,7 @@ span > a {
 .title {
     font-family: "Courier";
     font-size: 3rem;
-}
-
-.tarot-card {
-    width: 300px;
+    margin-bottom: 20px;
 }
 
 .link-container {
@@ -98,6 +95,7 @@ span > a {
     left: 0;
     margin-top: 60px;
     border: lightblue dashed;
+    border-radius: 10px;
     overflow: auto;
 }
 
@@ -119,23 +117,89 @@ span > a {
     position: relative;
 }
 
+.tarot-container {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+}
+
 .tarot-container > div {
     display: flex;
     justify-content: center;
-
 }
 
-.tarot-text {
+.tarot-front-image {
+    width: 300px;
+}
+
+.tarot-back {
+    position: absolute;
+    display: flex;
+    font-size: 1.2rem;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1000;
+}
+
+.tarot-title {
     position: absolute;
     top: 20px;
     font-size: 1.2rem;
     z-index: 2;
 }
 
+.tarot-back-inner {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 40px 30px 10px 30px;
+    top: 0;
+    left: 0;
+    font-size: 1rem;
+    z-index: 2;
+}
+
+.tarot-back-inner > div {
+    margin-top: 10px;
+}
+
+.tarot-back-inner a:hover {
+    text-decoration: underline;
+}
+
+.project-image {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.tarot-back a {
+    font-size: 1rem;
+    color: lightblue
+}
+
 .footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.hidden {
+    animation: fadeout 1s;
+    opacity: 0;
+    z-index: -1000;
+}
+
+.shown {
+    animation: fadein 1s;
+    opacity: 100%;
+    z-index: 1000;
 }
 
 /*-------------------------------------MEDIA QUERIES--------------------------------------*/
@@ -151,6 +215,11 @@ span > a {
     .projects-container {
         flex-direction: column;
     }
+    .home-container {
+        margin-bottom: 75px;
+        border-radius: 10px;
+        border: white dashed;
+    }
     .link-container {
         flex-direction: column;
     }
@@ -163,11 +232,9 @@ span > a {
     a {
         font-size: 1em;
     }
-    .tarot-card {
-        width: 80%;
-    }
-    .tarot-text {
-        font-size: 1em;
+    .project-image {
+        width: 150px;
+        height: 150px;
     }
     .nav-links {
         justify-content: center;
@@ -178,3 +245,41 @@ span > a {
         font-size: 2em;
     }
 }
+
+/*-------------------------------------ANIMATIONS--------------------------------------*/
+
+@keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+@-webkit-keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
