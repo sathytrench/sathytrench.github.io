@@ -8,7 +8,8 @@ const TarotCard = ({ projectData }) => {
   const cardFrontRef = useRef();
   const cardBackRef = useRef();
 
-  const handleClick = () => {
+  const handleClick = target => {
+    if (target.tagName === "A") return;
     if (!isCardFlipped) {
       if (cardFrontRef.current && cardBackRef.current) {
         setIsCardFlipped(true);
@@ -33,7 +34,7 @@ const TarotCard = ({ projectData }) => {
   }
 
   return (
-    <div className="tarot-container" onClick={handleClick}>
+    <div className="tarot-container" onClick={e => handleClick(e.target)}>
       <div className="tarot-front" ref={cardFrontRef}>
         <div className="tarot-title">{title}</div>
         <div>

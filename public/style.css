@@ -204,7 +204,7 @@ span > a {
 .shown {
     animation: fadein 1s;
     opacity: 100%;
-    z-index: 1000;
+    z-index: 2;
 }
 
 /*-------------------------------------MEDIA QUERIES--------------------------------------*/
