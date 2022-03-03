@@ -190,6 +190,11 @@ span > a {
     align-items: center;
 }
 
+.footer a {
+    font-size: 1rem;
+    margin-left: 5px;
+}
+
 .hidden {
     animation: fadeout 1s;
     opacity: 0;
