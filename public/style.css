@@ -20,10 +20,6 @@ a {
     font-size: 2rem;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
 span > a {
     color: #73b8ff;
     font-size: 1rem;
@@ -98,6 +94,7 @@ span > a {
     left: 0;
     margin-top: 60px;
     border: lightblue dashed;
+    border-radius: 10px;
     overflow: auto;
 }
 
@@ -155,13 +152,30 @@ span > a {
     position: absolute;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     font-size: 1.2rem;
-    padding: 60px 20px 10px 25px;
+    padding: 40px 30px 10px 30px;
     top: 0;
     left: 0;
     font-size: 1rem;
     z-index: 2;
+}
+
+.tarot-back-inner > div {
+    margin-top: 10px;
+}
+
+.tarot-back-inner a:hover {
+    text-decoration: underline;
+}
+
+.project-image {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    margin: 10px;
 }
 
 .tarot-back a {
@@ -176,11 +190,13 @@ span > a {
 }
 
 .hidden {
+    animation: fadeout 1s;
     opacity: 0;
     z-index: -1000;
 }
 
 .shown {
+    animation: fadein 1s;
     opacity: 100%;
     z-index: 1000;
 }
@@ -198,6 +214,11 @@ span > a {
     .projects-container {
         flex-direction: column;
     }
+    .home-container {
+        margin-bottom: 75px;
+        border-radius: 10px;
+        border: white dashed;
+    }
     .link-container {
         flex-direction: column;
     }
@@ -210,11 +231,9 @@ span > a {
     a {
         font-size: 1em;
     }
-    .tarot-front {
-        width: 80%;
-    }
-    .tarot-text {
-        font-size: 1em;
+    .project-image {
+        width: 150px;
+        height: 150px;
     }
     .nav-links {
         justify-content: center;
@@ -225,3 +244,41 @@ span > a {
         font-size: 2em;
     }
 }
+
+/*-------------------------------------ANIMATIONS--------------------------------------*/
+
+@keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+@-webkit-keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }

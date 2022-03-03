@@ -1,7 +1,7 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useRef } from 'react';
 
 const TarotCard = ({ projectData }) => {
-  const { title, cardFront, cardBack, description, links } = projectData;
+  const { title, cardFront, cardBack, description, links, projectImg } = projectData;
 
   const [isCardFlipped, setIsCardFlipped] = useState(false);
 
@@ -47,7 +47,11 @@ const TarotCard = ({ projectData }) => {
         alt={cardBack.imgAlt}/>
         <div className="tarot-title">{title}</div>
         <div className="tarot-back-inner">
+          <img src={projectImg.imgSrc} 
+          alt={projectImg.imgAlt}
+          className="project-image"/>
           <div>{description}</div>
+          <div>
             {links?.map((link, idx) => (
               <div key={idx} className="link-container">
                 <a href={link.url} target="_blank" rel="noopener noreferrer">{link.text}🠢</a>
@@ -55,6 +59,7 @@ const TarotCard = ({ projectData }) => {
             ))}
           </div>
         </div>
+      </div>
     </div>
   );
 };
