@@ -190,6 +190,11 @@ span > a {
     align-items: center;
 }
 
+.footer a {
+    font-size: 1rem;
+    margin-left: 5px;
+}
+
 .hidden {
     animation: fadeout 1s;
     opacity: 0;
@@ -199,7 +204,7 @@ span > a {
 .shown {
     animation: fadein 1s;
     opacity: 100%;
-    z-index: 1000;
+    z-index: 2;
 }
 
 /*-------------------------------------MEDIA QUERIES--------------------------------------*/
@@ -222,6 +227,8 @@ span > a {
     }
     .link-container {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .about-container {
         flex-direction: column;
