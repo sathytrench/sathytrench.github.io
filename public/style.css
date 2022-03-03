@@ -66,6 +66,7 @@ span > a {
 .title {
     font-family: "Courier";
     font-size: 3rem;
+    margin-bottom: 20px;
 }
 
 .link-container {
