@@ -54,7 +54,7 @@ const TarotCard = ({ projectData }) => {
           <div>
             {links?.map((link, idx) => (
               <div key={idx} className="link-container">
-                <a href={link.url} target="_blank" rel="noopener noreferrer">{link.text}🠢</a>
+                <a href={link.url} target="_blank" rel="noopener noreferrer">{link.text}{' ->'}</a>
               </div>
             ))}
           </div>

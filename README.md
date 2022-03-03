@@ -9,3 +9,7 @@ runs the app in development mode
 ### `npm run build`
 
 Builds the app for production to the `build` folder.
+
+### `npm run deploy`
+
+Builds the app to the `main` branch and deploys!
