@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 
 import NavBar from './NavBar';
 import App from './App';
@@ -11,16 +11,16 @@ import Footer from './Footer';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <NavBar />
       <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="about" element={<About />} />
-        <Route path="work" element={<Work />} />
+        <Route exact path="/" element={<App />} />
+        <Route exact path="about" element={<About />} />
+        <Route exact path="work" element={<Work />} />
         <Route path="*" element={<Lost />} />
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
