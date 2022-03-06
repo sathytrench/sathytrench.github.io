@@ -17,7 +17,7 @@ import threadableMarketingImg from './assets/threadableMarketingImg.PNG';
 
 const data = [
   {
-    category: "UPSTATEMENT",
+    category: "SOFTWARE",
     projects: [
       {
         title: "threadable app",
@@ -33,11 +33,11 @@ const data = [
         links: [
           {
             url: "https://apps.apple.com/app/apple-store/id1550995547",
-            text: "App Store Download"
+            text: "app store download"
           },
           {
             url: "https://upstatement.com/case-study/threadable/",
-            text: "Case Study"
+            text: "case study"
           }
         ],
         projectImg: {
@@ -59,7 +59,7 @@ const data = [
         links: [
           {
             url: "https://www.threadablebooks.com/",
-            text: "Site"
+            text: "site"
           }
         ],
         projectImg: {
@@ -86,11 +86,11 @@ const data = [
         links: [
           {
             url: "https://concrete-world.herokuapp.com/",
-            text: "Site"
+            text: "site"
           },
           {
             url: "https://github.com/sathytrench/ConcreteWorld",
-            text: "Code"
+            text: "code"
           }
         ],
         projectImg: {
@@ -111,12 +111,12 @@ const data = [
         description: "a Tetris clone where players can score extra points by learning Regex.",
         links: [
           {
-            url: "https://regextris.herokuapp.com/",
-            text: "Site"
+            url: "https://regextris.netlify.app/",
+            text: "site"
           },
           {
-            url: "https://github.com/SA3-Games/RegExtris",
-            text: "Code"
+            url: "https://github.com/sathytrench/RegExtris",
+            text: "code"
           }
         ],
         projectImg: {
