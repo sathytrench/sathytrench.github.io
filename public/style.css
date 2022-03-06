@@ -197,13 +197,13 @@ span > a {
 }
 
 .hidden {
-    animation: fadeout 1s;
+    animation: fadeout 0.5s;
     opacity: 0;
     z-index: -1000;
 }
 
 .shown {
-    animation: fadein 1s;
+    animation: fadein 0.5s;
     opacity: 100%;
     z-index: 2;
 }

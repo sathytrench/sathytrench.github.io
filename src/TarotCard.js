@@ -18,7 +18,7 @@ const TarotCard = ({ projectData }) => {
         setTimeout(() => {
           cardBackRef.current.classList.remove("hidden");
           cardBackRef.current.classList.add("shown");
-        }, 1000)
+        }, 700)
       }
     } else {
       if (cardBackRef.current && cardFrontRef.current) {
@@ -28,7 +28,7 @@ const TarotCard = ({ projectData }) => {
         setTimeout(() => {
           cardFrontRef.current.classList.remove("hidden");
           cardFrontRef.current.classList.add("shown");
-        }, 1000)
+        }, 700)
       }
     }
   }
