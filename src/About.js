@@ -12,6 +12,8 @@ const About = () => {
           + hi! i'm anahit<br /><br />
           + software engineer and artist<br /><br />
           + based in nyc<br /><br />
+          + educated in software engineering at the grace hopper program at fullstack academy
+          and creative writing at pratt institute<br /><br />
           + i recently completed a fullstack apprenticeship at 
           <span><a href="https://upstatement.com/" target="_blank" rel="noopener noreferrer"> upstatement</a></span>, 
           a digital product studio with an emphasis on design<br /><br />
