@@ -19,7 +19,8 @@ const About = () => {
           a digital product studio with an emphasis on design<br /><br />
           + i love building unusual and beautiful things, sharing open-source code, 
           and making webgames<br /><br />
-          + currently seeking full-time engineering opportunities
+          + currently working as a software engineer at 
+          <span><a href="https://civiqs.com/" target="_blank" rel="noopener noreferrer"> civiqs</a></span> 
       </div>
       <div className="link-container">
         <div className="links">

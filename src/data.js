@@ -85,7 +85,7 @@ const data = [
         description: "a platforming game where players collect flowers and avoid increasingly populous spiky enemies.",
         links: [
           {
-            url: "https://concrete-world.herokuapp.com/",
+            url: "https://concrete-world.netlify.app/",
             text: "site"
           },
           {
