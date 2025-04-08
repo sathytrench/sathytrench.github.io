@@ -14,13 +14,17 @@ const About = () => {
           + based in nyc<br /><br />
           + educated in software engineering at the grace hopper program at fullstack academy
           and creative writing at pratt institute<br /><br />
-          + i recently completed a fullstack apprenticeship at 
-          <span><a href="https://upstatement.com/" target="_blank" rel="noopener noreferrer"> upstatement</a></span>, 
+          + apprenticed at
+          <span><a href="https://upstatement.com/" target="_blank" rel="noopener noreferrer"> upstatement</a></span>,
           a digital product studio with an emphasis on design<br /><br />
-          + i love building unusual and beautiful things, sharing open-source code, 
+          + i worked as a software engineer at
+          <span><a href="https://civiqs.com/" target="_blank" rel="noopener noreferrer"> civiqs</a></span>,
+          where i built web apps on top of the research team's data science<br /><br />
+          + i love building unusual and beautiful things, sharing open-source code, data privacy,
           and making webgames<br /><br />
-          + currently working as a software engineer at 
-          <span><a href="https://civiqs.com/" target="_blank" rel="noopener noreferrer"> civiqs</a></span> 
+          + i'm currently job-hunting and taking this time to work on projects, so feel free
+          to get in touch about hiring or collaborating!<br /><br />
+          + i built this website using Create React App, Github Pages, and some CSS tricks
       </div>
       <div className="link-container">
         <div className="links">
