@@ -2,7 +2,9 @@
 
 body {
     background-color: black;
-    padding: 5px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
     min-width: 365px;
     overflow: auto;
     color: white;
