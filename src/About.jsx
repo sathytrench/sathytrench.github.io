@@ -22,9 +22,9 @@ const About = () => {
           where i built web apps on top of the research team's data science<br /><br />
           + i love building unusual and beautiful things, sharing open-source code, data privacy,
           and making webgames<br /><br />
-          + i'm currently job-hunting and taking this time to work on projects, so feel free
+          + i'm currently job-hunting and taking this time to work on projects and freelance, so feel free
           to get in touch about hiring or collaborating!<br /><br />
-          + i built this website using Create React App, Github Pages, and some CSS tricks
+          + i built this website using a Vite server, Github Pages, and some CSS tricks
       </div>
       <div className="link-container">
         <div className="links">

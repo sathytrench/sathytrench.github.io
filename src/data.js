@@ -13,28 +13,46 @@ import concreteWorldImg from './assets/concreteWorldImg.PNG';
 import artImg from './assets/artImg.PNG';
 import regextrisImg from './assets/regextrisImg.PNG';
 import threadableAppImg from './assets/threadableAppImg.PNG';
-import threadableMarketingImg from './assets/threadableMarketingImg.PNG';
+import civiqsImage from './assets/civiqsImage.png';
 
 const data = [
   {
     category: "SOFTWARE",
     projects: [
       {
-        title: "threadable app",
+        title: "civiqs.com",
         cardFront: {
           imgSrc: flowerCard1Front,
-          imgAlt: "A pixel drawing of a pink lotus"
+          imgAlt: "A pixel drawing of a yellow tulip",
         },
         cardBack: {
           imgSrc: flowerCard1Back,
           imgAlt: "The flower has disappeared"
         },
-        description: "a social e-reader where users form reading circles and navigate the classics alongside the world's leading thinkers and writers.",
+        description: "built on a headless CMS, this user-facing site showcases a sample of civiqs's research and featured products to attract new clients",
         links: [
           {
-            url: "https://apps.apple.com/app/apple-store/id1550995547",
-            text: "app store download"
-          },
+            url: "https://www.civiqs.com/",
+            text: "site"
+          }
+        ],
+        projectImg: {
+          imgSrc: civiqsImage,
+          imgAlt: "Small snippet of Threadable's marketing site"
+        }
+      },
+      {
+        title: "threadable app",
+        cardFront: {
+          imgSrc: flowerCard2Front,
+          imgAlt: "A pixel drawing of a pink lotus"
+        },
+        cardBack: {
+          imgSrc: flowerCard2Back,
+          imgAlt: "The flower has disappeared"
+        },
+        description: "this social e-reader app no longer exists due to the caprices of capitalism, but upstatement's case study lives on!",
+        links: [
           {
             url: "https://upstatement.com/case-study/threadable/",
             text: "case study"
@@ -43,28 +61,6 @@ const data = [
         projectImg: {
           imgSrc: threadableAppImg,
           imgAlt: "Threadable app logo"
-        }
-      },
-      {
-        title: "threadablebooks.com",
-        cardFront: {
-          imgSrc: flowerCard2Front,
-          imgAlt: "A pixel drawing of a yellow tulip",
-        },
-        cardBack: {
-          imgSrc: flowerCard2Back,
-          imgAlt: "The flower has disappeared"
-        },
-        description: "a marketing site that introduces new users to Threadable. i had particular fun crafting the animations in this project!",
-        links: [
-          {
-            url: "https://www.threadablebooks.com/",
-            text: "site"
-          }
-        ],
-        projectImg: {
-          imgSrc: threadableMarketingImg,
-          imgAlt: "Small snippet of Threadable's marketing site"
         }
       }
     ]
@@ -148,7 +144,7 @@ const data = [
         ],
         projectImg: {
           imgSrc: artImg,
-          imgAlt: "Relief print from Anahit's instagram portfolio"
+          imgAlt: "Drawing from Anahit's instagram portfolio"
         }
       }
     ]
