@@ -8,7 +8,7 @@ body {
     min-width: 365px;
     overflow: auto;
     color: white;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-family: "Courier";
 }
 
@@ -19,12 +19,12 @@ a {
     color: white;
     font-family: "Courier";
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 span > a {
     color: #73b8ff;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .links > a:visited, span > a:visited {
@@ -36,7 +36,7 @@ span > a {
 .nav-container {
     margin: 20px;
     display: flex;
-    justify-content: left;
+    justify-content: center;
 }
 
 .nav-links {
@@ -115,8 +115,6 @@ span > a {
     justify-content: center;
     align-items: center;
     margin: 10px;
-    overflow: visible;
-    position: relative;
 }
 
 .tarot-container {
@@ -212,13 +210,6 @@ span > a {
 /*-------------------------------------MEDIA QUERIES--------------------------------------*/
 
 @media (max-width: 810px){
-    img {
-        max-width: 100%;
-        max-height: 100%;
-    }  
-    .nav-container {
-        justify-content: center;
-    }  
     .projects-container {
         flex-direction: column;
     }
