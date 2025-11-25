@@ -8,7 +8,10 @@ import flowerCard4Front from './assets/flowerCard4Front.png';
 import flowerCard4Back from './assets/flowerCard4Back.png';
 import flowerCard5Front from './assets/flowerCard5Front.png';
 import flowerCard5Back from './assets/flowerCard5Back.png';
+import flowerCard6Front from './assets/flowerCard6Front.png';
+import flowerCard6Back from './assets/flowerCard6Back.png';
 
+import daydreamImage from './assets/daydreamImage.png';
 import concreteWorldImg from './assets/concreteWorldImg.PNG';
 import artImg from './assets/artImg.PNG';
 import regextrisImg from './assets/regextrisImg.PNG';
@@ -68,6 +71,32 @@ const data = [
   {
     category: "GAMES",
     projects: [
+      {
+        title: "daydream",
+        cardFront: {
+          imgSrc: flowerCard6Front,
+          imgAlt: "A pixel drawing of a red poppy",
+        },
+        cardBack: {
+          imgSrc: flowerCard6Back,
+          imgAlt: "The flower has disappeared"
+        },
+        description: "a dreamwalk through human history using the live Wikipedia API. grand prize winner of WikiGameJam NYC 2025 <3",
+        links: [
+          {
+            url: "https://sathytrench.itch.io/daydream",
+            text: "site"
+          },
+          {
+            url: "https://github.com/sathytrench/daydream",
+            text: "code"
+          }
+        ],
+        projectImg: {
+          imgSrc: daydreamImage,
+          imgAlt: "An archway containing the moon"
+        }
+      },
       {
         title: "concrete world",
         cardFront: {
