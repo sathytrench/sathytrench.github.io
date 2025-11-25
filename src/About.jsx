@@ -17,9 +17,12 @@ const About = () => {
           + apprenticed at
           <span><a href="https://upstatement.com/" target="_blank" rel="noopener noreferrer"> upstatement</a></span>,
           a digital product studio with an emphasis on design<br /><br />
-          + i worked as a software engineer at
+          + worked as a software engineer at
           <span><a href="https://civiqs.com/" target="_blank" rel="noopener noreferrer"> civiqs</a></span>,
           where i built web apps on top of the research team's data science<br /><br />
+          + working as a senior front-end engineer at
+          <span><a href="https://kingdomdeath.com/" target="_blank" rel="noopener noreferrer"> kingdom death</a></span>,
+          where i adapt legacy code to modern, idiomatic react<br /><br />
           + i love building unusual and beautiful things, sharing open-source code, data privacy,
           and making webgames<br /><br />
           + i'm currently job-hunting and taking this time to work on projects and freelance, so feel free
